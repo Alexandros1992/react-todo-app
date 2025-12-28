@@ -45,7 +45,7 @@ function App() {
         <button onClick={() => setFilter("active")}>Active</button>
         <button onClick={() => setFilter("completed")}>Completed</button>
        </div>
-       
+
     <TodoList
       todos={filteredTodos}
       toggleTodo={toggleTodo}

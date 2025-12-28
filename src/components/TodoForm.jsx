@@ -5,12 +5,11 @@ function TodoForm({ addTodo }) {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!text.trim()) {
+    if (text.trim()) {
       addTodo(text);
       setText("");
     }
-    
-   };
+  };
     return (
         <form onSubmit={handleSubmit} className="todo-form">
         <input
